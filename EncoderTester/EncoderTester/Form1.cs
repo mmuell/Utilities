@@ -55,7 +55,7 @@ namespace EncoderTester
         {
             try
             {
-                var wrappedSerialPort = new WrappedSerialPort((string) SerialPortsCB.SelectedItem, 9600, "Encoder Device");
+                var wrappedSerialPort = new WrappedSerialPort((string) SerialPortsCB.SelectedItem, 115200, "Encoder Device");
                 wrappedSerialPort.Diagnostics += OnDiagnostics;
                 wrappedSerialPort.WriteTimeout = 250;
                 _encoder = new EncoderDevice(wrappedSerialPort);

@@ -33,8 +33,7 @@ namespace EncoderTester
         {
             try
             {
-
-                _devicePort.Write(REQUEST_DEGREES);
+                _devicePort.WriteLine(REQUEST_DEGREES);
                 System.Threading.Thread.Sleep(100);
                 string result = _devicePort.ReadExisting();
                 Console.Out.WriteLine("result = {0}", result);
