@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncoderTester", "EncoderTester\EncoderTester.csproj", "{BF463D0F-50E0-48EE-A9E4-DF2DBBAD67B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEncoder", "TestEncoder\TestEncoder.csproj", "{3AC431A4-307F-4C68-8EFE-E7B262316485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{BF463D0F-50E0-48EE-A9E4-DF2DBBAD67B1}.Debug|x86.Build.0 = Debug|x86
 		{BF463D0F-50E0-48EE-A9E4-DF2DBBAD67B1}.Release|x86.ActiveCfg = Release|x86
 		{BF463D0F-50E0-48EE-A9E4-DF2DBBAD67B1}.Release|x86.Build.0 = Release|x86
+		{3AC431A4-307F-4C68-8EFE-E7B262316485}.Debug|x86.ActiveCfg = Debug|x86
+		{3AC431A4-307F-4C68-8EFE-E7B262316485}.Debug|x86.Build.0 = Debug|x86
+		{3AC431A4-307F-4C68-8EFE-E7B262316485}.Release|x86.ActiveCfg = Release|x86
+		{3AC431A4-307F-4C68-8EFE-E7B262316485}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
