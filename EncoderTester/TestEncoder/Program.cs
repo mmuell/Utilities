@@ -33,6 +33,13 @@ namespace TestEncoder
 
             var endDegrees = device.GetDegrees();
 
+            if (endDegrees == double.NegativeInfinity || startDegrees == double.NegativeInfinity)
+            {
+                Console.Out.WriteLine("Bad encoder");
+                Console.ReadLine();
+                return;
+            }
+
             Console.Out.WriteLine(string.Format("First measurement {0:N2} Second {1:N2}", startDegrees, endDegrees));
             Console.Out.WriteLine("Encoder is good");
 
