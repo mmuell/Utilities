@@ -105,55 +105,6 @@ namespace EncoderTester
             }
             double degrees = 360 * (numberOfTicks % TICKS_PER_ROTATION) / TICKS_PER_ROTATION;
 
-            while (degrees < 0 || degrees > 360)
-            {
-                if (degrees < 0)
-                {
-                    degrees += 360;
-                }
-                if (degrees > 360)
-                {
-                    degrees -= 360;
-                }
-            }
-
-            if (degrees < 90)
-            {
-                degrees = 90 + (90 - degrees);
-            }
-            else if (degrees > 90 && degrees < 180)
-            {
-                degrees = 90 - (degrees - 90);
-            }
-            else if (degrees > 180 && degrees < 270)
-            {
-                degrees = 270 + (270 - degrees);
-            }
-            else if (degrees > 270)
-            {
-                degrees = 270 - (degrees - 270);
-            }
-            else if (degrees == 180)
-            {
-                degrees = 0;
-            }
-            else if (degrees == 0)
-            {
-                degrees = 180;
-            }
-
-            while (degrees < 0 || degrees > 360)
-            {
-                if (degrees < 0)
-                {
-                    degrees += 360;
-                }
-                if (degrees > 360)
-                {
-                    degrees -= 360;
-                }
-            }
-
             return degrees;
         }
 
